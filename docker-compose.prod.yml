@@ -1,0 +1,14 @@
+services:
+  zarwood_gallery_com:
+    image: ${DOCKERHUB_USERNAME}/zarwood-gallery:latest
+    pull_policy: always
+    ports:
+      - "8080:80"
+    restart: always
+
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --cleanup --interval 300 zarwood_gallery_com
