@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<defs>
+  <pattern id="grain" width="130" height="130" patternUnits="userSpaceOnUse">
+    <path d="M0 24 C42 2 84 48 130 20 M0 61 C45 35 78 88 130 58 M0 103 C48 78 92 126 130 94" fill="none" stroke="#2c170d" stroke-width="4" opacity=".22"/>
+  </pattern>
+</defs>
+
+<rect width="800" height="800" fill="#d8b075"/>
+<circle cx="585" cy="205" r="88" fill="#f0d8a4"/>
+<path d="M0 625 C140 420 255 365 390 525 C520 680 645 375 800 260 L800 800 L0 800Z" fill="#2b170d"/>
+<path d="M0 690 C170 520 295 480 420 610 C540 735 660 510 800 390 L800 800 L0 800Z" fill="#a66735"/>
+<path d="M0 770 C160 610 260 620 420 700 C555 770 670 655 800 610 L800 800 L0 800Z" fill="#e2bd79"/>
+<path d="M68 590 C190 425 285 405 365 500 C430 575 495 540 555 465 C500 620 380 700 175 720Z" fill="#f1dca9"/>
+<path d="M0 620 C175 500 300 510 430 620 C555 720 672 612 800 560" fill="none" stroke="#c9964b" stroke-width="6" opacity=".62"/>
+<rect width="800" height="800" fill="url(#grain)" opacity=".42"/>
+</svg>

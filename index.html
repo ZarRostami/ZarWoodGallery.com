@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zarwood Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Zarwood Gallery">
+      <span class="logo-name">ZARWOOD</span>
+      <span class="logo-rule"></span>
+      <span class="logo-sub">GALLERY</span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#artworks">Artworks</a>
+      <a href="#artists">Artists</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="contact-top" href="#contact">Contact Us</a>
+
+    <button class="menu" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#artworks">Artworks</a>
+    <a href="#artists">Artists</a>
+    <a href="#exhibitions">Exhibitions</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Timeless Beauty, Crafted in Wood</p>
+        <h1>Where Nature<br>Becomes Art</h1>
+        <p class="hero-text">
+          Zarwood Gallery showcases exquisite marquetry artworks that blend the finest
+          natural woods with timeless craftsmanship.
+        </p>
+        <a class="hero-button" href="#artworks">Explore Artworks <span>→</span></a>
+      </div>
+
+      <div class="hero-photo" aria-label="Zarwood gallery hero image"></div>
+    </section>
+
+    <section class="values">
+      <article>
+        <div class="icon natural"></div>
+        <h3>Natural Materials</h3>
+        <p>We use the finest natural woods, meticulously selected for their beauty and character.</p>
+      </article>
+      <article>
+        <div class="icon craft"></div>
+        <h3>Masterful Craft</h3>
+        <p>Each piece is handcrafted by skilled artisans with precision, patience, and passion.</p>
+      </article>
+      <article>
+        <div class="icon time"></div>
+        <h3>Timeless Elegance</h3>
+        <p>Our artworks are designed to transcend time and elevate any space.</p>
+      </article>
+    </section>
+
+    <section class="artworks" id="artworks">
+      <div class="section-title">
+        <p class="eyebrow center">Featured</p>
+        <h2>Selected Artworks</h2>
+        <div class="arrows">
+          <button id="prev" aria-label="Previous">←</button>
+          <button id="next" aria-label="Next">→</button>
+        </div>
+      </div>
+
+      <div class="art-grid" id="artGrid">
+        <article>
+          <img src="assets/artwork-01.jpg" alt="Mountain Landscape marquetry artwork" />
+          <h3>Mountain Landscape</h3>
+          <p>Marquetry Artwork</p>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/artwork-02.jpg" alt="Silent Horizon marquetry artwork" />
+          <h3>Silent Horizon</h3>
+          <p>Marquetry Artwork</p>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/artwork-03.jpg" alt="Flowing Nature marquetry artwork" />
+          <h3>Flowing Nature</h3>
+          <p>Marquetry Artwork</p>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/artwork-04.jpg" alt="Golden Dunes marquetry artwork" />
+          <h3>Golden Dunes</h3>
+          <p>Marquetry Artwork</p>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <img class="about-image" src="assets/process-image.jpg" alt="Marquetry work in progress" />
+      <div class="about-copy">
+        <p class="eyebrow">About Zarwood Gallery</p>
+        <h2>The Art of Marquetry</h2>
+        <span></span>
+        <p>
+          At Zarwood Gallery, we celebrate the harmony between nature and human craftsmanship.
+          Our marquetry artworks are more than décor—they are stories told through wood.
+        </p>
+        <a href="#contact">Learn More</a>
+      </div>
+    </section>
+
+    <section class="artists" id="artists">
+      <p class="eyebrow center">Artist</p>
+      <h2>Handcrafted by Zarwood Gallery</h2>
+      <p>Original marquetry artworks for collectors, interiors, galleries, and art lovers worldwide.</p>
+    </section>
+
+    <section class="exhibitions" id="exhibitions">
+      <p class="eyebrow center">Collections</p>
+      <h2>Exhibitions & Commissions</h2>
+      <div class="mini-grid">
+        <div><strong>Original Panels</strong><small>Handcrafted marquetry artworks</small></div>
+        <div><strong>Custom Orders</strong><small>Bespoke pieces for interiors</small></div>
+        <div><strong>Worldwide Sales</strong><small>For collectors and art lovers</small></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Interested in an artwork?</h2>
+        <p>Contact Zarwood Gallery for available works, commissions, pricing, and shipping details.</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea rows="4" placeholder="Tell us about the artwork you are interested in"></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-note" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="#home">
+        <span class="logo-name">ZARWOOD</span>
+        <span class="logo-rule"></span>
+        <span class="logo-sub">GALLERY</span>
+      </a>
+      <p>Timeless beauty,<br>crafted in wood.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#artworks">Artworks</a>
+      <a href="#artists">Artists</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>+98 912 345 6789</p>
+      <p>info@zarwoodgallery.com</p>
+      <p>Tehran, Iran</p>
+    </div>
+
+    <div>
+      <h4>Newsletter</h4>
+      <p>Subscribe to receive updates on new artworks and exhibitions.</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Your email address" />
+        <button>→</button>
+      </form>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Zarwood Gallery. All rights reserved.</p>
+      <b>ZW</b>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

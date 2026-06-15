@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<defs>
+  <pattern id="grain" width="130" height="130" patternUnits="userSpaceOnUse">
+    <path d="M0 24 C42 2 84 48 130 20 M0 61 C45 35 78 88 130 58 M0 103 C48 78 92 126 130 94" fill="none" stroke="#2c170d" stroke-width="4" opacity=".22"/>
+  </pattern>
+</defs>
+
+<rect width="800" height="800" fill="#1f120c"/>
+<path d="M0 790 C120 590 185 390 230 0 L395 0 C310 285 335 520 460 800Z" fill="#d9ad6d"/>
+<path d="M150 800 C285 610 360 390 395 0 L550 0 C455 290 495 540 650 800Z" fill="#8a512c"/>
+<path d="M350 800 C455 600 600 370 650 0 L800 0 L800 800Z" fill="#e8c88a"/>
+<path d="M0 800 C165 615 255 420 290 0" stroke="#090605" stroke-width="18" fill="none"/>
+<path d="M310 800 C420 600 510 350 535 0" stroke="#090605" stroke-width="18" fill="none"/>
+<path d="M515 800 C610 610 710 390 755 0" stroke="#090605" stroke-width="18" fill="none"/>
+<path d="M0 700 C180 560 280 340 320 0" stroke="#c9964b" stroke-width="5" fill="none" opacity=".6"/>
+</svg>

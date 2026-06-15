@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+  --paper:#fbf7f0;
+  --cream:#f7f1e8;
+  --ink:#10151c;
+  --muted:#565b61;
+  --navy:#061b31;
+  --gold:#b77937;
+  --gold-soft:#c69251;
+  --line:rgba(16,21,28,.12);
+  --gold-line:rgba(183,121,55,.34);
+  --serif:'Cormorant Garamond', Georgia, serif;
+  --sans:'Inter', Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.62}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%}
+button,input,textarea{font:inherit}
+
+.header{
+  height:82px;
+  display:grid;
+  grid-template-columns:180px 1fr 126px;
+  align-items:center;
+  gap:32px;
+  padding:0 62px;
+  background:rgba(251,247,240,.96);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:40;
+  backdrop-filter:blur(16px);
+}
+
+.logo{width:150px;display:grid;line-height:1}
+.logo-name{font-family:var(--serif);font-size:31px;font-weight:500;letter-spacing:-.04em}
+.logo-rule{height:1px;width:100%;margin:5px 0 4px;background:linear-gradient(90deg,var(--gold) 0 42%,transparent 42% 58%,var(--gold) 58% 100%);opacity:.88}
+.logo-sub{font-family:var(--serif);font-size:11px;letter-spacing:.48em;margin-left:25px}
+
+.nav{justify-self:center;display:flex;gap:41px;text-transform:uppercase;letter-spacing:.075em;font-size:11px;font-weight:500}
+.nav a:hover,.nav .active{color:var(--gold)}
+.contact-top{justify-self:end;width:124px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(16,21,28,.52);text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.contact-top:hover{background:var(--navy);color:var(--paper);border-color:var(--navy)}
+.menu,.mobile-nav{display:none}
+
+.hero{
+  min-height:517px;
+  display:grid;
+  grid-template-columns:43.9% 56.1%;
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+
+.hero-copy{
+  position:relative;
+  z-index:3;
+  padding:92px 0 0 113px;
+}
+
+.hero-copy:after{
+  content:"";
+  position:absolute;
+  inset:0 -248px 0 0;
+  z-index:-1;
+  background:linear-gradient(90deg,var(--paper) 0%,rgba(251,247,240,.98) 47%,rgba(251,247,240,.76) 72%,rgba(251,247,240,0) 100%);
+}
+
+.eyebrow{margin:0 0 22px;color:var(--gold);text-transform:uppercase;letter-spacing:.245em;font-size:12px;font-weight:500}
+.center{text-align:center}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:400;color:var(--ink)}
+h1{font-size:56px;line-height:.99;letter-spacing:-.032em}
+.hero-text{width:390px;margin:27px 0 28px;color:#30343b;font-size:15px;line-height:1.65}
+.hero-button{height:43px;display:inline-flex;align-items:center;gap:18px;padding:0 25px;background:var(--navy);color:var(--paper);text-transform:uppercase;font-size:11px;letter-spacing:.09em}
+.hero-button:hover{background:#0a2845}
+.hero-photo{
+  min-height:517px;
+  background-image:url('assets/hero-gallery.jpg');
+  background-size:cover;
+  background-position:center center;
+}
+
+.values{
+  height:224px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  align-items:center;
+  padding:0 103px;
+  background:radial-gradient(circle at 50% 0,rgba(183,121,55,.1),transparent 42%),var(--navy);
+  color:var(--paper);
+}
+
+.values article{height:126px;display:grid;justify-items:center;align-content:start;padding:0 66px;text-align:center;border-right:1px solid rgba(251,247,240,.36)}
+.values article:last-child{border-right:0}
+.icon{width:46px;height:46px;margin-bottom:18px;border:1px solid var(--gold-soft);border-radius:50%;position:relative}
+.icon:after{content:"";position:absolute;left:50%;top:50%;width:17px;height:17px;border-left:1px solid var(--gold-soft);border-bottom:1px solid var(--gold-soft);transform:translate(-50%,-50%) rotate(-45deg)}
+.craft:after{width:23px;height:8px;border:1px solid var(--gold-soft);transform:translate(-50%,-50%) rotate(-35deg)}
+.time:after{width:18px;height:18px;border:0;border-left:1px solid var(--gold-soft);border-top:1px solid var(--gold-soft);transform:translate(-25%,-60%) rotate(0)}
+.values h3{color:var(--paper);font-size:18px;line-height:1;letter-spacing:.08em;text-transform:uppercase}
+.values p{width:285px;margin:13px 0 0;color:rgba(251,247,240,.82);font-size:13px;line-height:1.65}
+
+.artworks{padding:68px 112px 78px;background:var(--paper)}
+.section-title{position:relative;margin-bottom:43px}
+.section-title .eyebrow{margin-bottom:6px}
+.section-title h2{text-align:center;font-size:39px;line-height:1}
+.arrows{position:absolute;right:3px;bottom:0;display:flex;gap:13px}
+.arrows button{width:39px;height:39px;border:1px solid rgba(16,21,28,.44);border-radius:50%;background:transparent;cursor:pointer}
+.arrows button:hover{background:var(--navy);color:var(--paper)}
+
+.art-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:37px}
+.art-grid img{aspect-ratio:1/1;object-fit:cover}
+.art-grid h3{margin:15px 0 0;font-size:22px;line-height:1.05}
+.art-grid p{margin:2px 0 18px;color:var(--muted);font-size:14px}
+.art-grid a{text-transform:uppercase;font-size:11px;letter-spacing:.11em}
+.art-grid a span{color:var(--gold);margin-left:12px}
+
+.about{min-height:356px;display:grid;grid-template-columns:47.3% 52.7%;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-image{height:100%;min-height:356px;object-fit:cover}
+.about-copy{padding:61px 110px 54px 74px;align-self:center}
+.about-copy .eyebrow{margin-bottom:8px}
+.about-copy h2,.artists h2,.exhibitions h2,.contact h2{font-size:40px;line-height:1.08}
+.about-copy span{display:block;width:44px;height:1px;margin:19px 0 20px;background:var(--gold)}
+.about-copy p:not(.eyebrow){max-width:530px;margin:0 0 28px;color:#303640;font-size:15px}
+.about-copy a{display:inline-flex;align-items:center;justify-content:center;width:116px;height:44px;border:1px solid rgba(16,21,28,.32);text-transform:uppercase;font-size:11px;letter-spacing:.08em}
+.about-copy a:hover{background:var(--navy);color:var(--paper)}
+
+.artists,.exhibitions,.contact{padding:74px 112px;background:var(--cream);border-bottom:1px solid var(--line)}
+.artists{text-align:center}
+.artists p:not(.eyebrow){max-width:650px;margin:20px auto 0;color:var(--muted)}
+.exhibitions h2{text-align:center;margin-bottom:32px}
+.mini-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
+.mini-grid div{padding:28px;border-right:1px solid var(--gold-line)}
+.mini-grid div:last-child{border-right:0}
+.mini-grid strong{display:block;font-family:var(--serif);font-size:24px;font-weight:400}
+.mini-grid small{color:var(--muted);font-size:14px}
+
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:84px;background:var(--paper)}
+.contact>div p:not(.eyebrow){max-width:430px;color:var(--muted)}
+.contact-form{display:grid;gap:17px}
+.contact-form input,.contact-form textarea{width:100%;padding:13px 15px;border:1px solid rgba(16,21,28,.18);background:var(--paper);outline:none}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}
+.contact-form button{width:max-content;height:46px;padding:0 32px;border:0;background:var(--navy);color:var(--paper);text-transform:uppercase;letter-spacing:.09em;font-size:11px;cursor:pointer}
+.form-note{margin:0;color:var(--gold)}
+
+.footer{display:grid;grid-template-columns:1.4fr .75fr 1fr 1.25fr;gap:66px;padding:70px 112px 45px;background:var(--paper)}
+.footer p,.footer a{display:block;margin:0 0 8px;color:var(--muted);font-size:13px}
+.footer h4{margin:0 0 18px;text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:500}
+.footer-logo{margin-bottom:32px}
+.newsletter{display:grid;grid-template-columns:1fr 48px;margin-top:18px}
+.newsletter input{min-height:45px;border:1px solid rgba(16,21,28,.15);padding:0 14px;background:var(--paper);outline:none}
+.newsletter button{border:0;background:var(--navy);color:var(--paper);cursor:pointer;font-size:18px}
+.footer-bottom{grid-column:1/-1;display:flex;align-items:flex-end;justify-content:space-between;padding-top:30px;border-top:1px solid var(--gold-line)}
+.footer-bottom b{color:var(--gold);font-family:var(--serif);font-size:44px;line-height:.8;font-weight:400}
+
+@media(max-width:1100px){
+  .header{height:86px;grid-template-columns:170px 1fr 44px;padding:0 28px}
+  .nav,.contact-top{display:none}
+  .menu{display:grid;justify-self:end;gap:8px;width:44px;border:0;background:transparent;cursor:pointer}
+  .menu span{display:block;height:1px;background:var(--ink)}
+  .mobile-nav.open{position:fixed;z-index:45;left:0;right:0;top:86px;display:grid;padding:16px 28px 24px;background:var(--paper);border-bottom:1px solid var(--line)}
+  .mobile-nav a{padding:10px 0;text-transform:uppercase;letter-spacing:.1em;font-size:12px}
+  .hero,.about,.contact{grid-template-columns:1fr}
+  .hero-copy{padding:70px 40px 62px}
+  .hero-copy:after{inset:0}
+  .hero-photo{min-height:500px}
+  .values{height:auto;grid-template-columns:1fr;padding:36px 40px}
+  .values article{height:auto;padding:32px 10px;border-right:0;border-bottom:1px solid rgba(251,247,240,.25)}
+  .values article:last-child{border-bottom:0}
+  .artworks,.artists,.exhibitions,.contact,.footer{padding-left:40px;padding-right:40px}
+  .art-grid,.mini-grid,.footer{grid-template-columns:1fr 1fr}
+  .about-copy{padding:58px 40px}
+}
+
+@media(max-width:720px){
+  .header{padding:0 22px}
+  .logo-name{font-size:27px}.logo-sub{font-size:10px}
+  .hero-copy{padding:56px 24px 50px}
+  h1{font-size:45px}.hero-text{width:auto}
+  .hero-photo{min-height:430px}
+  .artworks,.artists,.exhibitions,.contact,.footer{padding:54px 24px}
+  .section-title h2{text-align:left;font-size:34px}.section-title .center{text-align:left}
+  .arrows{position:static;margin-top:18px}
+  .art-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:22px;padding-bottom:12px}
+  .art-grid article{min-width:78%;scroll-snap-align:start}
+  .about-copy h2,.artists h2,.exhibitions h2,.contact h2{font-size:34px}
+  .mini-grid,.footer{grid-template-columns:1fr}
+  .mini-grid div{border-right:0;border-bottom:1px solid var(--gold-line)}
+  .mini-grid div:last-child{border-bottom:0}
+  .footer-bottom{align-items:flex-start;flex-direction:column;gap:18px}
+}

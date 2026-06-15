@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+<defs>
+  <pattern id="grain" width="130" height="130" patternUnits="userSpaceOnUse">
+    <path d="M0 24 C42 2 84 48 130 20 M0 61 C45 35 78 88 130 58 M0 103 C48 78 92 126 130 94" fill="none" stroke="#2c170d" stroke-width="4" opacity=".22"/>
+  </pattern>
+</defs>
+
+<rect width="1200" height="720" fill="#21130d"/>
+<path d="M0 720 C170 520 290 310 355 0 L540 0 C430 240 450 500 620 720Z" fill="#d9ad6d"/>
+<path d="M230 720 C370 540 520 270 570 0 L750 0 C650 270 700 520 900 720Z" fill="#8a512c"/>
+<path d="M630 720 C760 520 920 270 1000 0 L1200 0 L1200 720Z" fill="#e8c88a"/>
+<path d="M0 720 C180 560 270 360 330 0" stroke="#0a0604" stroke-width="22" fill="none"/>
+<path d="M430 720 C550 530 640 300 700 0" stroke="#0a0604" stroke-width="22" fill="none"/>
+<path d="M800 720 C930 520 1010 310 1080 0" stroke="#0a0604" stroke-width="22" fill="none"/>
+<path d="M160 430 C340 350 520 365 680 460 C850 560 1000 555 1200 510" stroke="#c9964b" stroke-width="10" fill="none" opacity=".7"/>
+<ellipse cx="160" cy="430" rx="180" ry="70" fill="#6b3a20" opacity=".48" transform="rotate(-18 160 430)"/>
+<path d="M205 338 L320 405 L186 445 Z" fill="#b4b0a7"/>
+<path d="M200 340 L300 396" stroke="#222" stroke-width="6"/>
+</svg>
