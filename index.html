@@ -3,8 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zarwood Gallery</title>
+  <title>Zarwood Gallery | Handmade Wood Marquetry Artworks</title>
+  <meta name="description" content="Zarwood Gallery creates handmade wood marquetry artworks using natural woods, traditional craftsmanship, and timeless artistic compositions." />
+  <link rel="canonical" href="https://zarwoodgallery.com/" />
+  <meta name="keywords" content="Zarwood Gallery, wood marquetry, handmade wood art, wooden artwork, marquetry gallery, natural wood art, Oman art gallery" />
+  <meta name="author" content="Zarwood Gallery" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zarwood Gallery | Handmade Wood Marquetry Artworks" />
+  <meta property="og:description" content="Explore handmade wood marquetry artworks crafted from natural woods by Zarwood Gallery." />
+  <meta property="og:url" content="https://zarwoodgallery.com/" />
+  <meta property="og:image" content="https://zarwoodgallery.com/assets/hero-gallery-custom.png" />
+  <meta property="og:site_name" content="Zarwood Gallery" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zarwood Gallery | Handmade Wood Marquetry Artworks" />
+  <meta name="twitter:description" content="Handmade wood marquetry artworks crafted with natural woods and timeless detail." />
+  <meta name="twitter:image" content="https://zarwoodgallery.com/assets/hero-gallery-custom.png" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArtGallery",
+      "name": "Zarwood Gallery",
+      "description": "Handmade wood marquetry artworks crafted with natural woods and traditional craftsmanship.",
+      "image": "assets/hero-gallery-custom.png",
+      "telephone": "+96892204850",
+      "email": "info@zarwoodgallery.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Muscat",
+        "addressCountry": "OM"
+      },
+      "sameAs": [
+        "https://m.youtube.com/@zarvvood",
+        "https://www.instagram.com/zarwood_/"
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -17,24 +52,22 @@
     <nav class="nav">
       <a class="active" href="#home">Home</a>
       <a href="#artworks">Artworks</a>
-      <a href="#artists">Artists</a>
-      <a href="#exhibitions">Exhibitions</a>
+      <a href="gallery.html">Gallery</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="contact-top" href="#contact">Contact Us</a>
+    <a class="contact-top" href="https://wa.me/+96892204850" target="_blank" rel="noopener">Contact Me</a>
 
     <button class="menu" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
+      <span></span><span></span><span></span>
     </button>
   </header>
 
   <nav class="mobile-nav">
     <a href="#home">Home</a>
     <a href="#artworks">Artworks</a>
-    <a href="#artists">Artists</a>
-    <a href="#exhibitions">Exhibitions</a>
+    <a href="gallery.html">Gallery</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -56,17 +89,23 @@
 
     <section class="values">
       <article>
-        <div class="icon natural"></div>
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20.7 3.3c-5.7.4-10 2-12.7 4.7-2.2 2.2-3 5-2.2 7.4L3 18.2l1.4 1.4 2.7-2.7c2.5 1 5.4.2 7.7-2.1 2.7-2.7 4.3-7 4.7-12.7l.1-1.6-1.6.1ZM13.4 13.4c-1.6 1.6-3.5 2.3-5.1 1.9l5.4-5.4-1.4-1.4-5.4 5.4c-.3-1.5.3-3.4 1.8-5 2-2 5.1-3.3 9-3.9-.6 3.9-1.9 6.7-4.3 8.4Z"/></svg>
+        </div>
         <h3>Natural Materials</h3>
         <p>We use the finest natural woods, meticulously selected for their beauty and character.</p>
       </article>
       <article>
-        <div class="icon craft"></div>
-        <h3>Masterful Craft</h3>
+        <div class="icon" aria-hidden="true">
+          <img src="assets/hand-made-border-color.png" alt="" />
+        </div>
+        <h3>Handmade Artworks</h3>
         <p>Each piece is handcrafted by skilled artisans with precision, patience, and passion.</p>
       </article>
       <article>
-        <div class="icon time"></div>
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m12 2 1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2Zm7 9 1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3ZM5 13l.8 2.2L8 16l-2.2.8L5 19l-.8-2.2L2 16l2.2-.8L5 13Z"/></svg>
+        </div>
         <h3>Timeless Elegance</h3>
         <p>Our artworks are designed to transcend time and elevate any space.</p>
       </article>
@@ -82,36 +121,101 @@
         </div>
       </div>
 
-      <div class="art-grid" id="artGrid">
+      <div class="art-grid" id="artGrid" data-contact-href="#contact">
         <article>
-          <img src="assets/artwork-01.jpg" alt="Mountain Landscape marquetry artwork" />
-          <h3>Mountain Landscape</h3>
+          <img src="assets/abyane-door-clean.jpg" alt="Abyane Door marquetry artwork" />
+          <h3>Abyane Door</h3>
           <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 40 x 50 cm</li>
+            <li>Year: 2024</li>
+            <li>Used wood: jujube, walnut, alder, maple, hornbeam</li>
+          </ul>
           <a href="#contact">View Details <span>→</span></a>
         </article>
         <article>
-          <img src="assets/artwork-02.jpg" alt="Silent Horizon marquetry artwork" />
-          <h3>Silent Horizon</h3>
+          <img src="assets/silent-catch-clean.jpg" alt="Silent Catch marquetry artwork" />
+          <h3>Silent Catch</h3>
           <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 70 x 90 cm</li>
+            <li>Year: 2020</li>
+            <li>Used wood: walnut, acacia, barberry, tulipwood, maple, poplar, orange wood, jujube</li>
+          </ul>
           <a href="#contact">View Details <span>→</span></a>
         </article>
         <article>
-          <img src="assets/artwork-03.jpg" alt="Flowing Nature marquetry artwork" />
-          <h3>Flowing Nature</h3>
+          <img src="assets/lady-in-red-clean.jpg" alt="Lady in Red marquetry artwork" />
+          <h3>Lady in Red</h3>
           <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 40 x 60 cm</li>
+            <li>Year: 2019</li>
+            <li>Used wood: jujube, walnut, orange, Montpellier Maple</li>
+          </ul>
           <a href="#contact">View Details <span>→</span></a>
         </article>
         <article>
-          <img src="assets/artwork-04.jpg" alt="Golden Dunes marquetry artwork" />
-          <h3>Golden Dunes</h3>
+          <img src="assets/kilim-clean.jpg" alt="Kilim marquetry artwork" />
+          <h3>Kilim</h3>
           <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 50 x 70 cm</li>
+            <li>Year: 2021</li>
+            <li>Used wood: jujube, walnut, cooked walnut, maple, alder, orange, tulip</li>
+          </ul>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/camel-clean.png" alt="Camel marquetry artwork" />
+          <h3>Camel</h3>
+          <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 30 x 40 cm</li>
+            <li>Year: 2019</li>
+            <li>Used wood: walnut, orange, mahogany</li>
+          </ul>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/old-memories-clean.jpg" alt="Old Memories marquetry artwork" />
+          <h3>Old Memories</h3>
+          <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 60 x 70 cm</li>
+            <li>Year: 2014</li>
+            <li>Used wood: jujube, walnut, maple, juniper, kerat, eucalyptus, orange, acacia, quercus</li>
+          </ul>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/sunflowers-clean.jpg" alt="Sunflowers marquetry artwork" />
+          <h3>Sunflowers</h3>
+          <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 30 x 50 cm</li>
+            <li>Year: 2024</li>
+            <li>Used wood: barberry, greenheart, acacia, maple, jujube, walnut, cooked walnut</li>
+          </ul>
+          <a href="#contact">View Details <span>→</span></a>
+        </article>
+        <article>
+          <img src="assets/yazd-ab-anbar-clean.jpg" alt="Yazd Ab Anbar marquetry artwork" />
+          <h3>Yazd Ab Anbar</h3>
+          <p>Marquetry Artwork</p>
+          <ul class="art-specs">
+            <li>Size: 40 x 50 cm</li>
+            <li>Year: 2024</li>
+            <li>Used wood: alder, orange, alder burl, maple, hornbeam, walnut, cooked walnut</li>
+          </ul>
           <a href="#contact">View Details <span>→</span></a>
         </article>
       </div>
+      <button class="more-products" id="moreProducts" type="button" aria-controls="artGrid">More Product</button>
     </section>
 
     <section class="about" id="about">
-      <img class="about-image" src="assets/process-image.jpg" alt="Marquetry work in progress" />
+      <img class="about-image" src="assets/artist-working.jpg" alt="Zarwood artist working on a marquetry artwork" />
       <div class="about-copy">
         <p class="eyebrow">About Zarwood Gallery</p>
         <h2>The Art of Marquetry</h2>
@@ -120,43 +224,13 @@
           At Zarwood Gallery, we celebrate the harmony between nature and human craftsmanship.
           Our marquetry artworks are more than décor—they are stories told through wood.
         </p>
-        <a href="#contact">Learn More</a>
+        <a href="about.html">Learn More</a>
       </div>
     </section>
 
-    <section class="artists" id="artists">
-      <p class="eyebrow center">Artist</p>
-      <h2>Handcrafted by Zarwood Gallery</h2>
-      <p>Original marquetry artworks for collectors, interiors, galleries, and art lovers worldwide.</p>
-    </section>
-
-    <section class="exhibitions" id="exhibitions">
-      <p class="eyebrow center">Collections</p>
-      <h2>Exhibitions & Commissions</h2>
-      <div class="mini-grid">
-        <div><strong>Original Panels</strong><small>Handcrafted marquetry artworks</small></div>
-        <div><strong>Custom Orders</strong><small>Bespoke pieces for interiors</small></div>
-        <div><strong>Worldwide Sales</strong><small>For collectors and art lovers</small></div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Interested in an artwork?</h2>
-        <p>Contact Zarwood Gallery for available works, commissions, pricing, and shipping details.</p>
-      </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your name" required />
-        <input type="email" placeholder="Your email" required />
-        <textarea rows="4" placeholder="Tell us about the artwork you are interested in"></textarea>
-        <button type="submit">Send Message</button>
-        <p class="form-note" aria-live="polite"></p>
-      </form>
-    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div>
       <a class="logo footer-logo" href="#home">
         <span class="logo-name">ZARWOOD</span>
@@ -169,26 +243,39 @@
     <div>
       <h4>Quick Links</h4>
       <a href="#artworks">Artworks</a>
-      <a href="#artists">Artists</a>
-      <a href="#exhibitions">Exhibitions</a>
-      <a href="#about">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
       <a href="#contact">Contact</a>
     </div>
 
     <div>
       <h4>Contact</h4>
-      <p>+98 912 345 6789</p>
+      <p>+968 9220 4850</p>
       <p>info@zarwoodgallery.com</p>
-      <p>Tehran, Iran</p>
+      <p>Muscat, Oman</p>
     </div>
 
     <div>
-      <h4>Newsletter</h4>
-      <p>Subscribe to receive updates on new artworks and exhibitions.</p>
-      <form class="newsletter">
-        <input type="email" placeholder="Your email address" />
-        <button>→</button>
-      </form>
+      <h4>Social</h4>
+      <p>Follow Zarwood Gallery for new artworks, process videos, and studio updates.</p>
+      <div class="social-links">
+        <a class="social-link youtube" href="https://m.youtube.com/@zarvvood" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.8 4 12 4 12 4s-3.8 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.8v1.7c0 1.8.2 3.6.2 3.6s.2 1.5.8 2.1c.8.8 1.9.8 2.4.9 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.6v-1.7c0-1.8-.2-3.6-.2-3.6ZM10.1 14.8V8.6l5.8 3.1-5.8 3.1Z"/></svg>
+          YouTube
+        </a>
+        <a class="social-link instagram" href="https://www.instagram.com/zarwood_/" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5-2.6a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17 6.7Z"/></svg>
+          Instagram
+        </a>
+        <a class="social-link whatsapp" href="https://wa.me/+96892204850" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2.2 22l5.2-1.4A9.9 9.9 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A7.9 7.9 0 1 1 12 20Zm4.5-5.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5s0-.3 0-.5-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.8 4.8 0 0 0 1 2.5 11 11 0 0 0 4.2 3.8 14 14 0 0 0 1.4.5 3.3 3.3 0 0 0 1.5.1 2.4 2.4 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c-.1-.1-.2-.2-.4-.3Z"/></svg>
+          WhatsApp
+        </a>
+        <a class="social-link email" href="mailto:info@zarwoodgallery.com">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.3l8 5.1 8-5.1V7H4Zm16 10V9.6l-7.5 4.8a1 1 0 0 1-1 0L4 9.6V17h16Z"/></svg>
+          Email
+        </a>
+      </div>
     </div>
 
     <div class="footer-bottom">
@@ -197,6 +284,12 @@
     </div>
   </footer>
 
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img class="lightbox-image" src="" alt="" />
+  </div>
+
+  <script src="artworks-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
