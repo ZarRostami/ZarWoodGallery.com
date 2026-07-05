@@ -16,7 +16,7 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--paper);color-scheme:only light}
+html{scroll-behavior:smooth;background:var(--paper);color-scheme:light}
 body{min-height:100vh;margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.62}
 a{text-decoration:none;color:inherit}
 img{display:block;width:100%}
@@ -237,7 +237,19 @@ h1{font-size:56px;line-height:.99;letter-spacing:-.032em}
 }
 
 @media(max-width:720px){
-  html,body,main,.hero,.hero-copy,.artworks,.about,.about-copy,.footer,.gallery-hero,.about-detail{background-color:#fbf7f0}
+  html,body{
+    background:#fbf7f0!important;
+    background-image:linear-gradient(#fbf7f0,#fbf7f0)!important;
+    color-scheme:light;
+  }
+  main,.hero,.hero-copy,.artworks,.about,.about-copy,.footer,.gallery-hero,.about-detail{
+    background-color:#fbf7f0!important;
+    background-image:linear-gradient(#fbf7f0,#fbf7f0)!important;
+  }
+  .hero-copy:after{background:#fbf7f0!important;background-image:linear-gradient(#fbf7f0,#fbf7f0)!important}
+  .header,.mobile-nav{background:#fbf7f0!important;background-image:linear-gradient(#fbf7f0,#fbf7f0)!important}
+  h1,h2,h3,.logo-name,.logo-sub{color:#10151c}
+  .hero-text,.about-copy p:not(.eyebrow),.footer p,.footer a{color:#303640}
   .header{height:78px;grid-template-columns:minmax(0,132px) 1fr 44px;padding:0 18px;gap:12px}
   .logo{width:126px}
   .contact-top{width:98px;height:36px;font-size:9px;letter-spacing:.06em}
